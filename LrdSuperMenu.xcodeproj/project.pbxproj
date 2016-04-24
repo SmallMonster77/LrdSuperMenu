@@ -15,6 +15,9 @@
 		F5672F801CC4C95800E7DBA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5672F7E1CC4C95800E7DBA2 /* LaunchScreen.storyboard */; };
 		F5672F8B1CC4C95800E7DBA2 /* LrdSuperMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5672F8A1CC4C95800E7DBA2 /* LrdSuperMenuTests.m */; };
 		F5672F961CC4C95800E7DBA2 /* LrdSuperMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5672F951CC4C95800E7DBA2 /* LrdSuperMenuUITests.m */; };
+		F5672FA61CC4C98000E7DBA2 /* LrdSuperMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5672FA51CC4C98000E7DBA2 /* LrdSuperMenu.m */; };
+		F58366F51CC8CC6D00A2996C /* accessory_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58366F31CC8CC6D00A2996C /* accessory_normal@2x.png */; };
+		F58366F61CC8CC6D00A2996C /* accessory_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F58366F41CC8CC6D00A2996C /* accessory_highlight@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		F5672F911CC4C95800E7DBA2 /* LrdSuperMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LrdSuperMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5672F951CC4C95800E7DBA2 /* LrdSuperMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LrdSuperMenuUITests.m; sourceTree = "<group>"; };
 		F5672F971CC4C95800E7DBA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5672FA41CC4C98000E7DBA2 /* LrdSuperMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrdSuperMenu.h; sourceTree = "<group>"; };
+		F5672FA51CC4C98000E7DBA2 /* LrdSuperMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrdSuperMenu.m; sourceTree = "<group>"; };
+		F58366F31CC8CC6D00A2996C /* accessory_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory_normal@2x.png"; sourceTree = "<group>"; };
+		F58366F41CC8CC6D00A2996C /* accessory_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accessory_highlight@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 		F5672F6F1CC4C95800E7DBA2 /* LrdSuperMenu */ = {
 			isa = PBXGroup;
 			children = (
+				F5672FA31CC4C96C00E7DBA2 /* LrdSuperMenu */,
 				F5672F731CC4C95800E7DBA2 /* AppDelegate.h */,
 				F5672F741CC4C95800E7DBA2 /* AppDelegate.m */,
 				F5672F761CC4C95800E7DBA2 /* ViewController.h */,
@@ -138,6 +146,17 @@
 				F5672F971CC4C95800E7DBA2 /* Info.plist */,
 			);
 			path = LrdSuperMenuUITests;
+			sourceTree = "<group>";
+		};
+		F5672FA31CC4C96C00E7DBA2 /* LrdSuperMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F5672FA41CC4C98000E7DBA2 /* LrdSuperMenu.h */,
+				F5672FA51CC4C98000E7DBA2 /* LrdSuperMenu.m */,
+				F58366F31CC8CC6D00A2996C /* accessory_normal@2x.png */,
+				F58366F41CC8CC6D00A2996C /* accessory_highlight@2x.png */,
+			);
+			path = LrdSuperMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5672F801CC4C95800E7DBA2 /* LaunchScreen.storyboard in Resources */,
+				F58366F61CC8CC6D00A2996C /* accessory_highlight@2x.png in Resources */,
 				F5672F7D1CC4C95800E7DBA2 /* Assets.xcassets in Resources */,
+				F58366F51CC8CC6D00A2996C /* accessory_normal@2x.png in Resources */,
 				F5672F7B1CC4C95800E7DBA2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +294,7 @@
 				F5672F781CC4C95800E7DBA2 /* ViewController.m in Sources */,
 				F5672F751CC4C95800E7DBA2 /* AppDelegate.m in Sources */,
 				F5672F721CC4C95800E7DBA2 /* main.m in Sources */,
+				F5672FA61CC4C98000E7DBA2 /* LrdSuperMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +520,7 @@
 				F5672F9C1CC4C95800E7DBA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5672F9D1CC4C95800E7DBA2 /* Build configuration list for PBXNativeTarget "LrdSuperMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +529,7 @@
 				F5672F9F1CC4C95800E7DBA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5672FA01CC4C95800E7DBA2 /* Build configuration list for PBXNativeTarget "LrdSuperMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +538,7 @@
 				F5672FA21CC4C95800E7DBA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
